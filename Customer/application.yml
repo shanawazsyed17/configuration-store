@@ -24,3 +24,9 @@ management.metrics.enable.request_head: true
 management.metrics.enable.request_process: true
 management.metrics.enable.request_failed: true
 management.metrics.enable.request_inprogress: true
+
+vehicle.default.model:fourwheeler
+member.rent.min:5
+
+name: demopropvalue
+
