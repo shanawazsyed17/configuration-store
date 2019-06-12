@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: Customer
+  profiles:
+    active:
+    - local
+endpoints:
+  cors:
+    allowed-origins:
+    - '*'
+    max-age: 3600
+    allow-credentials: true
+    allowed-methods:
+    - '*'
+management:
+ endpoints: 
+  web: 
+   exposure: 
+     include: prometheus,info,health,metrics
+
+
+management.metrics.enable.all: false
+management.metrics.enable.request_head: true
+management.metrics.enable.request_process: true
+management.metrics.enable.request_failed: true
+management.metrics.enable.request_inprogress: true

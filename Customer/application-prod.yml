@@ -1,0 +1,7 @@
+server:
+  port: 8084
+  servlet:
+    context-path: /cce2-Customer
+spring:
+  profiles:
+    active: prod
